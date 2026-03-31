@@ -1,13 +1,14 @@
 # Dr. Robotnik's Mean Bean Machine - Disassembly (Sega Mega Drive / Sega Genesis)
 
-This is a work-in-progress disassembly of Dr. Robotnik's Mean Bean Machine for the Genesis/Mega Divre. 
-Suggestions, pull requests, and the like are all welcome!
+This is a work-in-progress disassembly of Dr. Robotnik's Mean Bean Machine for the Genesis/Mega Drive.<br/> 
+<br/>
+Suggestions, pull requests, and the like are all welcome!<br/>
 
 ## Disclaimer
 
-Any and all content presented in this repository is presented for informational and educational purposes only.
-Commercial usage is expressly prohibited. I do not claim ownership of any code in this repository.
-You assume any and all responsibility for using this content responsibility. I do not claim any responsibility or warranty.
+- Any and all content presented in this repository is presented for informational and educational purposes only.<br/>
+- Commercial usage is expressly prohibited. I do not claim ownership of any code in this repository.<br/>
+- You assume any and all responsibility for using this content responsibility. I do not claim any responsibility or warranty.<br/>
 
 ## Building (Windows)
 
