@@ -1,6 +1,6 @@
-# Puyo Puyo 1 Sega Megadrive Disassembly
+# Dr. Robotnik's Mean Bean Machine - Disassembly (Sega Mega Drive / Sega Genesis)
 
-This is a work-in-progress disassembly of Puyo Puyo 1 for the Megadrive/Genesis  
+This is a work-in-progress disassembly of Dr. Robotnik's Mean Bean Machine for the Genesis/Mega Divre. 
 Suggestions, pull requests, and the like are all welcome!
 
 ## Disclaimer
@@ -11,8 +11,9 @@ You assume any and all responsibility for using this content responsibility. I d
 
 ## Building (Windows)
 
-Download the repo and run build.bat. This will build the rom and place it in the repo at out/puyobuilt.bin
+1 - Download the repo.
+2 - Open "build config.asm" and adjust any settings (the default settings build a 100% USA Version).
+3 - Run "build (Windows).bat to build the rom.
+4 - The built rom can be found in the "output" folder.
 
-## Building (Linux)
 
-Download the repo and run build.sh. This will build the rom and place it in the repo at out/puyobuilt.bin
