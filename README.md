@@ -11,9 +11,9 @@ You assume any and all responsibility for using this content responsibility. I d
 
 ## Building (Windows)
 
-1 - Download the repo.
-2 - Open "build config.asm" and adjust any settings (the default settings build a 100% USA Version).
-3 - Run "build (Windows).bat to build the rom.
-4 - The built rom can be found in the "output" folder.
+1 - Download the repo.<br/>
+2 - Open "build config.asm" and adjust any settings (the default settings build a 100% USA Version).<br/>
+3 - Run "build (Windows).bat to build the rom.<br/>
+4 - The built rom can be found in the "output" folder.<br/>
 
 
