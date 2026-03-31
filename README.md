@@ -14,6 +14,8 @@ Please do not submit an issue relating to ROM-Hacking the game. Instead, please 
 ## Contributing
 
 If you are interesting in contributing to the disassembly, please send an e-mail to scrambled-beans@outlook.com
+/<br/>
+Do check the "researchers.txt" first to see what people are reseaching./<br/>
 
 ## Disclaimer
 
