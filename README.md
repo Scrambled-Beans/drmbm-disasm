@@ -1,8 +1,8 @@
-# Dr. Robotnik's Mean Bean Machine - Disassembly (Sega Mega Drive / Sega Genesis)
+# Dr. Robotnik's Mean Bean Machine (16-Bit) - Disassembly
 
-This is a work-in-progress disassembly of Dr. Robotnik's Mean Bean Machine for the Genesis/Mega Drive.<br/> 
+This is a work-in-progress disassembly of Dr. Robotnik's Mean Bean Machine for the Sega Mega Drive/Genesis.<br/> 
 
-## Improvements
+## Issues/Improvements
 
 Suggestions, pull requests, and the like are all welcome!<br/>
 <br/>
@@ -10,6 +10,10 @@ Please do not submit an issue relating to ROM-Hacking the game. Instead, please 
 - https://forums.sonicretro.org/forums/engineering-reverse-engineering.13/<br/>
 - https://sonicresearch.org/community/index.php<br/>
 - https://www.romhacking.net/<br/>
+
+## Contributing
+
+If you are interesting in contributing to the disassembly, please send an e-mail to scrambled-beans@outlook.com
 
 ## Disclaimer
 
