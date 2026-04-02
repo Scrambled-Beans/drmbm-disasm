@@ -8,8 +8,8 @@ CompressArtMap=1			; 0 = Don't compress the Art and Mappings
 NemesisCompress=0			; 0 = Accurate Nemesis Compression
 							; 1 = Improved Nemesis Compression
 
-EnigmaCompress=0			; 0 = Don't compress the Engima mappings
-							; 1 =    Do compress the Engima mappings	
+EnigmaCompress=0			; 0 = Don't compress the Enigma mappings
+							; 1 =    Do compress the Enigma mappings	
 							
 KeepPrevBuild=1				; 0 = Don't keep a copy of the previous Build
 							; 1 =    Do keep a copy of the previous Build
