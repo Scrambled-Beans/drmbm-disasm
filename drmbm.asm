@@ -1,8 +1,8 @@
 ; ==============================================================
 ;
-;	Dr. Robotnik's Mean Bean Machine (16-Bit) - Disassembly
+;	Dr. Robotnik's Mean Bean Machine - Disassembly
 ;
-;	Original game by Compile & SEGA (Â© 1993)
+;	Original game by Compile & SEGA (© 1993)
 ;
 ; --------------------------------------------------------------
 ;
@@ -31,7 +31,7 @@
 ;
 ; --------------------------------------------------------------
 ;
-;	Last Updated: 3/31/2026 (M/D/Y)
+;	Last Updated: 4/3/2026 (M/D/Y)
 ;
 ; ==============================================================
 
@@ -64,7 +64,8 @@
 	
 	include	"include/macros/bytecodes.asm"
 	include "include/macros/cube2asm (sound driver).asm"
-	include	"include/macros/mega drive.asm"
+	include	"include/macros/mega drive.asm"	
+	include	"include/macros/sprite mappings.asm"
 	
 	include	"include/macros/set password.asm"
 	include	"include/macros/default options.asm"
@@ -32979,8 +32980,13 @@ byte_13937:	dc.b 1
 ; ---------------------------------------------------------------------------
 	nop
 ; ---------------------------------------------------------------------------
+
+; --------------------------------------------------------------
+; Sprite Mappings Table
+; --------------------------------------------------------------
+
 SpriteMappings:	
-	dc.l off_14F9C
+	dc.l Sprite_Puyo_Red
 	dc.l off_15042
 	dc.l off_150E8
 	dc.l off_153C2
@@ -34007,38 +34013,10 @@ word_14F78:	dc.w 2
 word_14F8A:	dc.w 2
 	dc.w $FFF8, $D00, $A55C, $FFDC
 	dc.w $FFF8, $D00, $A564, 4
-off_14F9C:	dc.l word_14FC0
-	dc.l word_14FD2
-	dc.l word_14FE4
-	dc.l word_14FF6
-	dc.l word_15008
-	dc.l word_15012
-	dc.l word_1501C
-	dc.l word_15026
-	dc.l word_15030
-word_14FC0:	dc.w 2
-	dc.w $FFF8, $501, $100,	$FFF8
-	dc.w $FFFE, $503, $614C, $FFFE
-word_14FD2:	dc.w 2
-	dc.w $FFF8, $501, $148,	$FFF8
-	dc.w $FFFE, $503, $614C, $FFFE
-word_14FE4:	dc.w 2
-	dc.w $FFF8, $501, $140,	$FFF8
-	dc.w $FFFE, $503, $614C, $FFFE
-word_14FF6:	dc.w 2
-	dc.w $FFF8, $501, $144,	$FFF8
-	dc.w $FFFE, $503, $614C, $FFFE
-word_15008:	dc.w 1
-	dc.w $FFF8, $502, $31C,	$FFF8
-word_15012:	dc.w 1
-	dc.w $FFFC, 2, $324, $FFFC
-word_1501C:	dc.w 1
-	dc.w $FFFC, 2, $326, $FFFC
-word_15026:	dc.w 1
-	dc.w $FFFE, $503, $614C, $FFFE
-word_15030:	dc.w 2
-	dc.w $FFF8, $501, $150,	$FFF8
-	dc.w $FFFE, $503, $614C, $FFFE
+
+; Sprite - Puyo Red
+	include	"resources/mappings/sprite/Puyo_Red.asm"
+		
 off_15042:	dc.l word_15066
 	dc.l word_15078
 	dc.l word_1508A
