@@ -2,7 +2,7 @@
 ;
 ;	Dr. Robotnik's Mean Bean Machine - Disassembly
 ;
-;	Original game by Compile & SEGA (© 1993)
+;	Original game by Compile & SEGA (Â© 1993)
 ;
 ; --------------------------------------------------------------
 ;
@@ -19,6 +19,7 @@
 ;     - AdolescentSeagull
 ;     - Hivebrain
 ;     - MarkeyJester
+;     - Totally-Not-Filter
 ;
 ; --------------------------------------------------------------
 ;
