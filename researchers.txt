@@ -1,15 +1,17 @@
-List of researchers who are helping update the the
+List of researchers who are helping update the
 Dr. Robotnik's Mean Bean Machine (16-Bit) Disassembly:
 
 RadioTails
-- Sprite Mappings
-- Puyo1 Mappings
+- Sprite Mappings.
+- Puyo1 Mappings.
+- Rename fix palettes.
 
 TomboyDragon
--
+- Checking Mean Bean Tsuu Discord for useful notes.
+- Checking old MBM Disassembly builds for useful notes.
 
 DaxKatter
--
+- Cube Sound Driver.
 
 Nia
-- 
+- Cube Sound Driver.
