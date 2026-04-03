@@ -1,6 +1,6 @@
 ; ==============================================================
 ;
-;	Dr. Robotnik's Mean Bean Machine - Disassembly
+;	Dr. Robotnik's Mean Bean Machine (16-Bit) - Disassembly
 ;
 ;	Original game by Compile & SEGA (© 1993)
 ;
