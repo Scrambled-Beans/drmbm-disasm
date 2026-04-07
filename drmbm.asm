@@ -32,7 +32,7 @@
 ;
 ; --------------------------------------------------------------
 ;
-;	Last Updated: 4/3/2026 (M/D/Y)
+;	Last Updated: 4/7/2026 (M/D/Y)
 ;
 ; ==============================================================
 
@@ -32988,11 +32988,11 @@ byte_13937:	dc.b 1
 
 SpriteMappings:	
 	dc.l Sprite_Puyo_Red
-	dc.l off_15042
-	dc.l off_150E8
-	dc.l off_153C2
-	dc.l off_15468
-	dc.l off_1550E
+	dc.l Sprite_Puyo_Yellow
+	dc.l Sprite_Send_Garbage
+	dc.l Sprite_Puyo_Green
+	dc.l Sprite_Puyo_Purple
+	dc.l Sprite_Puyo_Blue
 	dc.l off_155B4
 	dc.l off_14814
 	dc.l off_19084
@@ -33052,6 +33052,9 @@ SpriteMappings:
 	dc.l off_17748
 	dc.l off_17748
 	dc.l off_19610
+	
+; --------------------------------------------------------------
+	
 off_13A44:	dc.l word_13A5C
 	dc.l word_13A6E
 	dc.l word_13A80
@@ -34015,262 +34018,38 @@ word_14F8A:	dc.w 2
 	dc.w $FFF8, $D00, $A55C, $FFDC
 	dc.w $FFF8, $D00, $A564, 4
 
+; --------------------------------------------------------------
+
 ; Sprite - Puyo Red
-	include	"resources/mappings/sprite/Puyo_Red.asm"
+	include	"resources/mappings/sprite/Puyo Red.asm"
+	
+; --------------------------------------------------------------
+	
+; Sprite - Puyo Yellow
+	include	"resources/mappings/sprite/Puyo Yellow.asm"
+	
+; --------------------------------------------------------------
 		
-off_15042:	dc.l word_15066
-	dc.l word_15078
-	dc.l word_1508A
-	dc.l word_1509C
-	dc.l word_150AE
-	dc.l word_150B8
-	dc.l word_150C2
-	dc.l word_150CC
-	dc.l word_150D6
-word_15066:	dc.w 2
-	dc.w $FFF8, $501, $154,	$FFF8
-	dc.w $FFFE, $503, $61A0, $FFFE
-word_15078:	dc.w 2
-	dc.w $FFF8, $501, $19C,	$FFF8
-	dc.w $FFFE, $503, $61A0, $FFFE
-word_1508A:	dc.w 2
-	dc.w $FFF8, $501, $194,	$FFF8
-	dc.w $FFFE, $503, $61A0, $FFFE
-word_1509C:	dc.w 2
-	dc.w $FFF8, $501, $198,	$FFF8
-	dc.w $FFFE, $503, $61A0, $FFFE
-word_150AE:	dc.w 1
-	dc.w $FFF8, $502, $320,	$FFF8
-word_150B8:	dc.w 1
-	dc.w $FFFC, 2, $325, $FFFC
-word_150C2:	dc.w 1
-	dc.w $FFFC, 2, $327, $FFFC
-word_150CC:	dc.w 1
-	dc.w $FFFE, $503, $61A0, $FFFE
-word_150D6:	dc.w 2
-	dc.w $FFF8, $501, $1A4,	$FFF8
-	dc.w $FFFE, $503, $61A0, $FFFE
-off_150E8:	dc.l word_1535C
-	dc.l word_15366
-	dc.l word_15370
-	dc.l word_15382
-	dc.l word_15394
-	dc.l word_153AE
-	dc.l word_153B8
-	dc.l word_15154
-	dc.l word_15176
-	dc.l word_15198
-	dc.l word_151BA
-	dc.l word_151DC
-	dc.l word_151FE
-	dc.l word_15210
-	dc.l word_15222
-	dc.l word_15234
-	dc.l word_15246
-	dc.l word_15258
-	dc.l word_1527A
-	dc.l word_1529C
-	dc.l word_152BE
-	dc.l word_152E0
-	dc.l word_15302
-	dc.l word_15314
-	dc.l word_15326
-	dc.l word_15338
-	dc.l word_1534A
-word_15154:	dc.w 4
-	dc.w $FFF8, 0, $81A8, $FFF8
-	dc.w 0,	0, $91A8, $FFF8
-	dc.w $FFF8, 0, $89A8, 0
-	dc.w 0,	0, $99A8, 0
-word_15176:	dc.w 4
-	dc.w $FFF8, $400, $81A9, $FFF0
-	dc.w 0,	$400, $91A9, $FFF0
-	dc.w $FFF8, $400, $89A9, 0
-	dc.w 0,	$400, $99A9, 0
-word_15198:	dc.w 4
-	dc.w $FFF0, $500, $81AB, $FFF0
-	dc.w 0,	$500, $91AB, $FFF0
-	dc.w $FFF0, $500, $89AB, 0
-	dc.w 0,	$500, $99AB, 0
-word_151BA:	dc.w 4
-	dc.w $FFF0, $500, $81AF, $FFF0
-	dc.w 0,	$500, $91AF, $FFF0
-	dc.w $FFF0, $500, $89AF, 0
-	dc.w 0,	$500, $99AF, 0
-word_151DC:	dc.w 4
-	dc.w $FFF8, 0, $81B3, $FFF8
-	dc.w 0,	0, $91B3, $FFF8
-	dc.w $FFF8, 0, $89B3, 0
-	dc.w 0,	0, $99B3, 0
-word_151FE:	dc.w 2
-	dc.w $FFF8, $400, $81B4, $FFF8
-	dc.w 0,	$400, $99B4, $FFF8
-word_15210:	dc.w 2
-	dc.w $FFF0, $D00, $81B6, $FFF0
-	dc.w 0,	$D00, $99B6, $FFF0
-word_15222:	dc.w 2
-	dc.w $FFF0, $D00, $81BE, $FFF0
-	dc.w 0,	$D00, $99BE, $FFF0
-word_15234:	dc.w 2
-	dc.w $FFF0, $D00, $81C6, $FFF0
-	dc.w 0,	$D00, $99C6, $FFF0
-word_15246:	dc.w 2
-	dc.w $FFF0, $D00, $81CE, $FFF0
-	dc.w 0,	$D00, $99CE, $FFF0
-word_15258:	dc.w 4
-	dc.w $FFF8, 0, $A1A8, $FFF8
-	dc.w 0,	0, $B1A8, $FFF8
-	dc.w $FFF8, 0, $A9A8, 0
-	dc.w 0,	0, $B9A8, 0
-word_1527A:	dc.w 4
-	dc.w $FFF8, $400, $A1A9, $FFF0
-	dc.w 0,	$400, $B1A9, $FFF0
-	dc.w $FFF8, $400, $A9A9, 0
-	dc.w 0,	$400, $B9A9, 0
-word_1529C:	dc.w 4
-	dc.w $FFF0, $500, $A1AB, $FFF0
-	dc.w 0,	$500, $B1AB, $FFF0
-	dc.w $FFF0, $500, $A9AB, 0
-	dc.w 0,	$500, $B9AB, 0
-word_152BE:	dc.w 4
-	dc.w $FFF0, $500, $A1AF, $FFF0
-	dc.w 0,	$500, $B1AF, $FFF0
-	dc.w $FFF0, $500, $A9AF, 0
-	dc.w 0,	$500, $B9AF, 0
-word_152E0:	dc.w 4
-	dc.w $FFF8, 0, $A1B3, $FFF8
-	dc.w 0,	0, $B1B3, $FFF8
-	dc.w $FFF8, 0, $A9B3, 0
-	dc.w 0,	0, $B9B3, 0
-word_15302:	dc.w 2
-	dc.w $FFF8, $400, $A1B4, $FFF8
-	dc.w 0,	$400, $B9B4, $FFF8
-word_15314:	dc.w 2
-	dc.w $FFF0, $D00, $A1B6, $FFF0
-	dc.w 0,	$D00, $B9B6, $FFF0
-word_15326:	dc.w 2
-	dc.w $FFF0, $D00, $A1BE, $FFF0
-	dc.w 0,	$D00, $B9BE, $FFF0
-word_15338:	dc.w 2
-	dc.w $FFF0, $D00, $A1C6, $FFF0
-	dc.w 0,	$D00, $B9C6, $FFF0
-word_1534A:	dc.w 2
-	dc.w $FFF0, $D00, $A1CE, $FFF0
-	dc.w 0,	$D00, $B9CE, $FFF0
-word_1535C:	dc.w 1
-	dc.w $FFF8, $500, $81DE, 0
-word_15366:	dc.w 1
-	dc.w $FFF8, $900, $81E2, 0
-word_15370:	dc.w 2
-	dc.w $FFF8, $900, $81E2, 0
-	dc.w $FFF8, $500, $81DE, $18
-word_15382:	dc.w 2
-	dc.w $FFF8, $900, $81E2, 0
-	dc.w $FFF8, $900, $81E2, $18
-word_15394:	dc.w 3
-	dc.w $FFF8, $900, $81E2, 0
-	dc.w $FFF8, $900, $81E2, $18
-	dc.w $FFF8, $500, $81DE, $30
-word_153AE:	dc.w 1
-	dc.w $FFF8, $500, $81DA, 0
-word_153B8:	dc.w 1
-	dc.w $FFF8, $500, $81D6, 0
-off_153C2:	dc.l word_153E6
-	dc.l word_153F8
-	dc.l word_1540A
-	dc.l word_1541C
-	dc.l word_1542E
-	dc.l word_15438
-	dc.l word_15442
-	dc.l word_1544C
-	dc.l word_15456
-word_153E6:	dc.w 2
-	dc.w $FFF8, $501, $41FC, $FFF8
-	dc.w $FFFE, $503, $6248, $FFFE
-word_153F8:	dc.w 2
-	dc.w $FFF8, $501, $4244, $FFF8
-	dc.w $FFFE, $503, $6248, $FFFE
-word_1540A:	dc.w 2
-	dc.w $FFF8, $501, $423C, $FFF8
-	dc.w $FFFE, $503, $6248, $FFFE
-word_1541C:	dc.w 2
-	dc.w $FFF8, $501, $4240, $FFF8
-	dc.w $FFFE, $503, $6248, $FFFE
-word_1542E:	dc.w 1
-	dc.w $FFF8, $502, $431C, $FFF8
-word_15438:	dc.w 1
-	dc.w $FFFC, 2, $4324, $FFFC
-word_15442:	dc.w 1
-	dc.w $FFFC, 2, $4326, $FFFC
-word_1544C:	dc.w 1
-	dc.w $FFFE, $503, $6248, $FFFE
-word_15456:	dc.w 2
-	dc.w $FFF8, $501, $424C, $FFF8
-	dc.w $FFFE, $503, $6248, $FFFE
-off_15468:	dc.l word_1548C
-	dc.l word_1549E
-	dc.l word_154B0
-	dc.l word_154C2
-	dc.l word_154D4
-	dc.l word_154DE
-	dc.l word_154E8
-	dc.l word_154F2
-	dc.l word_154FC
-word_1548C:	dc.w 2
-	dc.w $FFF8, $501, $2250, $FFF8
-	dc.w $FFFE, $503, $629C, $FFFE
-word_1549E:	dc.w 2
-	dc.w $FFF8, $501, $2298, $FFF8
-	dc.w $FFFE, $503, $629C, $FFFE
-word_154B0:	dc.w 2
-	dc.w $FFF8, $501, $2290, $FFF8
-	dc.w $FFFE, $503, $629C, $FFFE
-word_154C2:	dc.w 2
-	dc.w $FFF8, $501, $2294, $FFF8
-	dc.w $FFFE, $503, $629C, $FFFE
-word_154D4:	dc.w 1
-	dc.w $FFF8, $502, $2320, $FFF8
-word_154DE:	dc.w 1
-	dc.w $FFFC, 2, $2325, $FFFC
-word_154E8:	dc.w 1
-	dc.w $FFFC, 2, $2327, $FFFC
-word_154F2:	dc.w 1
-	dc.w $FFFE, $503, $629C, $FFFE
-word_154FC:	dc.w 2
-	dc.w $FFF8, $501, $22A0, $FFF8
-	dc.w $FFFE, $503, $629C, $FFFE
-off_1550E:	dc.l word_15532
-	dc.l word_15544
-	dc.l word_15556
-	dc.l word_15568
-	dc.l word_1557A
-	dc.l word_15584
-	dc.l word_1558E
-	dc.l word_15598
-	dc.l word_155A2
-word_15532:	dc.w 2
-	dc.w $FFF8, $501, $22A4, $FFF8
-	dc.w $FFFE, $503, $62F0, $FFFE
-word_15544:	dc.w 2
-	dc.w $FFF8, $501, $22EC, $FFF8
-	dc.w $FFFE, $503, $62F0, $FFFE
-word_15556:	dc.w 2
-	dc.w $FFF8, $501, $22E4, $FFF8
-	dc.w $FFFE, $503, $62F0, $FFFE
-word_15568:	dc.w 2
-	dc.w $FFF8, $501, $22E8, $FFF8
-	dc.w $FFFE, $503, $62F0, $FFFE
-word_1557A:	dc.w 1
-	dc.w $FFF8, $502, $231C, $FFF8
-word_15584:	dc.w 1
-	dc.w $FFFC, 2, $2324, $FFFC
-word_1558E:	dc.w 1
-	dc.w $FFFC, 2, $2326, $FFFC
-word_15598:	dc.w 1
-	dc.w $FFFE, $503, $62F0, $FFFE
-word_155A2:	dc.w 2
-	dc.w $FFF8, $501, $22F4, $FFF8
-	dc.w $FFFE, $503, $62F0, $FFFE
+; Sprite - Send Garabage
+	include	"resources/mappings/sprite/Send Garbage.asm"
+	
+; --------------------------------------------------------------
+	
+; Sprite - Puyo Green
+	include	"resources/mappings/sprite/Puyo Green.asm"	
+	
+; --------------------------------------------------------------
+	
+; Sprite - Puyo Purple
+	include	"resources/mappings/sprite/Puyo Purple.asm"	
+	
+; --------------------------------------------------------------
+	
+; Sprite - Puyo Blue
+	include	"resources/mappings/sprite/Puyo Blue.asm"	
+	
+; --------------------------------------------------------------
+
 off_155B4:	dc.l word_15866
 	dc.l word_15878
 	dc.l word_1588A
