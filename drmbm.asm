@@ -46513,7 +46513,7 @@ byte_66C9A:
 	dc.b $18, 0
 	
 ArtNem_GameOverBG:
-	incbin	"resources/art/art_nem/compressed/Game Over.nem"
+	incbin	"resources/art/art_nem/compressed/Game Over - Robots.nem"
 	even
 	
 MapEni_GameOverRobots:	
