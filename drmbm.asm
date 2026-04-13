@@ -32,7 +32,7 @@
 ;
 ; --------------------------------------------------------------
 ;
-;	Last Updated: 4/7/2026 (M/D/Y)
+;	Last Updated: 4/13/2026 (M/D/Y)
 ;
 ; ==============================================================
 
@@ -46741,7 +46741,7 @@ ArtPuyo_LevelFonts:
 	even
 					
 ArtPuyo_OldRoleCallFont:
-	incbin	"resources/art/art_sor/compressed/Font - Cast (Unused).sor"
+	incbin	"resources/art/art_sor/compressed/Font - Puyo Cast.sor"
 	even
 					
 ArtPuyo_DemoMode:
@@ -46753,7 +46753,7 @@ ArtPuyo_OldFont:
 	even
 					
 ArtPuyo_Harpy:
-	incbin	"resources/art/art_sor/compressed/Cutscene - Harpy (Unused).sor"
+	incbin	"resources/art/art_sor/compressed/Cutscene - Harpy.sor"
 	even
 					
 ArtPuyo_LevelSprites:
@@ -46765,11 +46765,11 @@ ArtPuyo_BestRecord:
 	even
 					
 ArtPuyo_BestRecordModes:
-	incbin	"resources/art/art_sor/compressed/Font - Japanese.sor"
+	incbin	"resources/art/art_sor/compressed/Font - Best Record.sor"
 	even
 					
 ArtPuyo_OldGameOver:
-	incbin	"resources/art/art_sor/compressed/Game Over (Unused).sor"
+	incbin	"resources/art/art_sor/compressed/Game Over - Arle.sor"
 	even
 	
 ; --------------------------------------------------------------
