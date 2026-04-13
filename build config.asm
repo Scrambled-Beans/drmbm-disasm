@@ -60,10 +60,10 @@ BugFixes:			equ 0	; 0 = Keep bugs from Puyo Puyo (Arcade - Rev A)
 EnableSRAM:			equ 0	; 0 = Disable SRAM
 							; 1 = Enable SRAM
 							
-ReadWriteType:		equ 3	; 3 =     Odd Only - SRAM (recommended)
+ReadWriteType:		equ 3	; 3 =     Odd Only - SRAM
 							; 2 =    Even Only - SRAM
 							; 0 = Odd and Even - SRAM
-							; 1 = Serial EEPROMS (RAMs with 4-bit data bus, etc)
+							; 1 = Serial EEPROMS
 														
 DeviceType:			equ 1	; 1 = SRAM
 							; 2 = EEPROM	
