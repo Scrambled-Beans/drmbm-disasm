@@ -32,7 +32,7 @@
 ;
 ; --------------------------------------------------------------
 ;
-;	Last Updated: 04/14/2026 20:51:14 (M/D/Y)
+;	Last Updated: 04/14/2026 21:01:26 (M/D/Y)
 ;
 ; ==============================================================
 
@@ -46799,11 +46799,11 @@ ArtNem_SegaLogo:
 	even
 	
 ArtNem_DifficultyFaces:
-	incbin	"resources/art/art_nem/compressed/2P - Difficulty Faces 1P.nem"
+	incbin	"resources/art/art_nem/compressed/2P - Difficulty Faces (1P).nem"
 	even
 	
 ArtNem_DifficultyFaces2:
-	incbin	"resources/art/art_nem/compressed/2P - Difficulty Faces 2P.nem"
+	incbin	"resources/art/art_nem/compressed/2P - Difficulty Faces (2P).nem"
 	even
 	
 ArtUnc_Robotnik_21:
