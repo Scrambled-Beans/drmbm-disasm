@@ -4,18 +4,19 @@ This is a work-in-progress disassembly of Dr. Robotnik's Mean Bean Machine for t
 
 ## Issues/Improvements
 
-Suggestions, pull requests, and the like are all welcome!<br/>
+Suggestions, pull requests, and the like are welcome!<br/>
 <br/>
 Please do not submit an issue relating to ROM-Hacking the game. Instead, please ask for help on the following forums:<br/>
 - https://forums.sonicretro.org/forums/engineering-reverse-engineering.13/<br/>
 - https://sonicresearch.org/community/index.php<br/>
-- https://www.romhacking.net/<br/>
+- https://www.romhacking.net<br/>
 
 ## Contributing
 
 If you are interesting in contributing to the disassembly, please send an e-mail to scrambled-beans@outlook.com
-/<br/>
-Do check the "researchers.txt" first to see what people are reseaching./<br/>
+<br/>
+<br/>
+Do check the "researchers.txt" first to see what people are reseaching.<br/>
 
 ## Disclaimer
 
