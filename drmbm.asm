@@ -32,7 +32,7 @@
 ;
 ; --------------------------------------------------------------
 ;
-;	Last Updated: 04/14/2026 21:01:26 (M/D/Y)
+;	Last Updated: 04/14/2026 23:02:10 (M/D/Y)
 ;
 ; ==============================================================
 
@@ -2842,8 +2842,8 @@ LoadLevelBGArt:
 
 LoadLevelBGPal:
 	move.w	#2,d0
-	lea	(Palettes).l,a2
-	adda.l	#(Pal_GreenTealPuyos-Palettes),a2
+	lea	(Palette_Table).l,a2
+	adda.l	#(Pal_GreenTealPuyos-Palette_Table),a2
 	jmp	(LoadPalette).l
 ; End of function LoadLevelBGPal
 
@@ -2916,11 +2916,280 @@ loc_27CE:
 	rts
 
 ; --------------------------------------------------------------
-; Palette table
+; Palette Table
 ; --------------------------------------------------------------
 
-Palettes:
-	include "resources/palettes/palette table.asm"
+Palette_Table:
+
+Pal_Black:
+	incbin	"resources/palettes/line/original/Black.pal"
+	
+Pal_RedYellowPuyos:
+	incbin	"resources/palettes/line/new/Stage - Red and Yellow.pal"
+	
+Pal_BluePurplePuyos:
+	incbin	"resources/palettes/line/new/Stage - Blue and Purple.pal"
+	
+Pal_GreenTealPuyos:
+	incbin	"resources/palettes/line/original/Board - Grass.pal"
+	
+Pal_Characters_Puyo:
+	incbin	"resources/palettes/line/original/Characters - Puyo (Normal).pal"
+	
+Pal_IntroSky1_Puyo:
+	incbin	"resources/palettes/line/original/Cutscene - Grass (Top).pal"
+	
+Pal_IntroScenery1_Puyo:
+	incbin	"resources/palettes/line/original/Cutscene - Grass (Bottom).pal"
+	
+Pal_IntroScenery2_Puyo:
+	incbin	"resources/palettes/line/original/Cutscene - Ruins (Foreground).pal"
+	
+Pal_IntroSky2_Puyo:
+	incbin	"resources/palettes/line/original/Cutscene - Ruins (Background).pal"
+	
+Pal_IntroScenery3_Puyo:
+	incbin	"resources/palettes/line/original/Cutscene - Hell (Background).pal"
+	
+Pal_GameOverFG:
+	incbin	"resources/palettes/line/new/Game Over - Stage.pal"
+	
+Pal_GameOverBG:
+	incbin	"resources/palettes/line/new/Game Over - Robots.pal"
+	
+Pal_White:
+	incbin	"resources/palettes/line/original/White.pal"
+	
+Pal_White2:
+	incbin	"resources/palettes/line/original/White.pal"
+	
+Pal_CabinBoard_Puyo:
+	incbin	"resources/palettes/line/original/Board - Cabin.pal"
+	
+Pal_EndingBG_Puyo:
+	incbin	"resources/palettes/line/original/Arle Ending - Sunset.pal"
+	
+Pal_TitleArle_Puyo: ; Used in Normal Ending (Arle)
+	incbin	"resources/palettes/line/original/Arle Nadja.pal"
+	
+Pal_StaffBG_Puyo:
+	incbin	"resources/palettes/line/original/Credits - Nighttime.pal"
+	
+Pal_HighScoresBG:
+	incbin	"resources/palettes/line/new/High Scores.pal"
+	
+Pal_EndingArleNormal_Puyo: ; Unused Opening (Arle))
+	incbin	"resources/palettes/line/original/Arle Nadja.pal"
+	
+Pal_EndingArleFade_Puyo:
+	incbin	"resources/palettes/line/original/Characters - Puyo (Defeated).pal"
+	
+Pal_Options:
+	incbin	"resources/palettes/line/original/Board - Puzzle.pal"
+	
+Pal_Unknown1_Puyo:
+	incbin	"resources/palettes/line/original/Title - Gray.pal"
+	
+Pal_MainMenu_Puyo: ; Used in Title (Arle)
+	incbin	"resources/palettes/line/original/Arle Nadja.pal"
+	
+Pal_PracticeMode_Puyo:
+	incbin	"resources/palettes/line/original/Endless Mode.pal"
+	
+Pal_OpponentPreview_Puyo:
+	incbin	"resources/palettes/line/original/Next Opponent - Wall.pal"
+	
+Pal_OptTextGray:
+	incbin	"resources/palettes/line/original/Credits - Gray.pal"
+	
+Pal_OptTextBlue:
+	incbin	"resources/palettes/line/original/Options - Blue.pal"
+	
+Pal_OptTextRed:
+	incbin	"resources/palettes/line/original/Options - Red.pal"
+	
+Pal_OptTextGreen:
+	incbin	"resources/palettes/line/original/Options - Green.pal"
+	
+Pal_TutorialJoystick:
+	incbin	"resources/palettes/line/original/Tutorial.pal"
+	
+Pal_TitleBG_Puyo:
+	incbin	"resources/palettes/line/original/Title - Wall.pal"
+	
+Pal_Unknown2_Puyo:
+	incbin	"resources/palettes/line/original/Title - Sega Logo.pal"
+	
+Pal_TitleBlue_Puyo:
+	incbin	"resources/palettes/line/original/Title - Blue.pal"
+	
+Pal_TitleGreen_Puyo:
+	incbin	"resources/palettes/line/original/Title - Green.pal"
+	
+Pal_TitleRed_Puyo:
+	incbin	"resources/palettes/line/original/Title - Red.pal"
+	
+Pal_TitleOrange_Puyo:
+	incbin	"resources/palettes/line/original/Title - Yellow.pal"
+	
+Pal_TitleCyan_Puyo:
+	incbin	"resources/palettes/line/original/Title - Cyan.pal"
+	
+Pal_TitlePink_Puyo:
+	incbin	"resources/palettes/line/original/Title - Purple.pal"
+	
+Pal_StoneBoard1_Puyo:
+	incbin	"resources/palettes/line/original/Board - Ruins (Stone).pal"
+	
+Pal_StoneBoard2_Puyo:
+	incbin	"resources/palettes/line/original/Board - Ruins (Marble).pal"
+	
+Pal_RobotnikIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Dr Robotnik.pal"
+	
+Pal_Scratch:
+	incbin	"resources/palettes/line/new/Portrait - Scratch.pal"
+	
+Pal_Frankly:
+	incbin	"resources/palettes/line/new/Portrait - Frankly.pal"
+	
+Pal_Coconuts:
+	incbin	"resources/palettes/line/new/Portrait - Coconuts.pal"
+	
+Pal_Dynamight:
+	incbin	"resources/palettes/line/new/Portrait - Dynamight.pal"
+	
+Pal_Grounder:
+	incbin	"resources/palettes/line/new/Portrait - Grounder.pal"
+	
+Pal_DavySprocket:
+	incbin	"resources/palettes/line/new/Portrait - Davy Sprocket.pal"
+	
+Pal_Spike:
+	incbin	"resources/palettes/line/new/Portrait - Spike.pal"
+	
+Pal_CoconutsIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Coconuts.pal"
+	
+Pal_LevelIntroFG:
+	incbin	"resources/palettes/line/new/Cutscene - Outside (Foreground).pal"
+	
+Pal_LevelIntroBG:
+	incbin	"resources/palettes/line/new/Cutscene - Outside (Background).pal"
+	
+Pal_RobotnikLair:
+	incbin	"resources/palettes/line/new/Cutscene - Inside.pal"
+	
+Pal_GameIntroGrounder:
+	incbin	"resources/palettes/line/new/Opening - Grounder.pal"
+	
+Pal_GameIntroRobotnik:
+	incbin	"resources/palettes/line/new/Opening - Dr Robotnik.pal"
+	
+Pal_GameIntroScratch:
+	incbin	"resources/palettes/line/new/Opening - Scratch.pal"
+	
+Pal_MainMenu:
+	incbin	"resources/palettes/line/new/Main Menu - Frame (Vines).pal"
+	
+Pal_MainMenuSel:
+	incbin	"resources/palettes/line/new/Main Menu - Select.pal"
+	
+Pal_GameOverText:
+	incbin	"resources/palettes/line/new/Game Over - Text.pal"
+	
+Pal_MainMenuShadow:
+	incbin	"resources/palettes/line/new/Main Menu - Red Bean's Shadow.pal"
+	
+Pal_DragonBreath:
+	incbin	"resources/palettes/line/new/Portrait - Dragon Breath.pal"
+	
+Pal_FranklyIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Frankly.pal"
+	
+Pal_Humpty:
+	incbin	"resources/palettes/line/new/Portrait - Humpty.pal"
+	
+Pal_Robotnik:
+	incbin	"resources/palettes/line/new/Portrait - Dr Robotnik.pal"
+	
+Pal_Skweel:
+	incbin	"resources/palettes/line/new/Portrait - Skweel.pal"
+	
+Pal_DavySprocketIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Davy Sprocket.pal"
+	
+Pal_DynamightIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Dynamight.pal"
+	
+Pal_SirFfuzzyLogik:
+	incbin	"resources/palettes/line/new/Portrait - Sir Ffuzzy-Logik.pal"
+	
+Pal_Arms:
+	incbin	"resources/palettes/line/new/Portrait - Arms.pal"
+	
+Pal_ArmsIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Arms.pal"
+	
+Pal_DifficultyFaces:
+	incbin	"resources/palettes/line/new/2P - Difficulty Faces.pal"
+	
+Pal_SpikeIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Spike.pal"
+	
+Pal_DragonBreathIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Dragon Breath.pal"
+	
+Pal_SirFfuzzyLogikIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Sir Ffuzzy-Logik.pal"
+	
+Pal_HumptyIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Humpty.pal"
+	
+Pal_GrounderIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Grounder.pal"
+	
+Pal_VsOhNo:
+	incbin	"resources/palettes/line/new/2P - Oh No.pal"
+	
+Pal_SkweelIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Skweel.pal"
+	
+Pal_ScratchIntro:
+	incbin	"resources/palettes/line/new/Cutscene - Scratch.pal"
+	
+Pal_Title1:
+	incbin	"resources/palettes/line/new/Title - Colors 1.pal"
+	
+Pal_Title2:
+	incbin	"resources/palettes/line/new/Title - Colors 2.pal"
+	
+Pal_Title3:
+	incbin	"resources/palettes/line/new/Title - Colors 3.pal"
+	
+Pal_TitleB:
+	incbin	"resources/palettes/line/new/Title - Colors 4 (Hide Robotnik Face).pal"
+	
+Pal_Password4:
+	incbin	"resources/palettes/line/new/Password - Wall.pal"
+	
+Pal_Password3:
+	incbin	"resources/palettes/line/new/Password - Green and Refugee Beans.pal"
+	
+Pal_EndingBeans:
+	incbin	"resources/palettes/line/new/Ending - Beans.pal"
+	
+Pal_SegaLogo:
+	incbin	"resources/palettes/line/new/Sega Logo.pal"
+	
+Pal_Credits:
+	incbin	"resources/palettes/line/new/Credits - Has Bean.pal"
+	
+Pal_TitleA:
+	incbin	"resources/palettes/line/new/Title - Colors 4 (Show Robotnik Face).pal"
+	
+Pal_HasBeanShadow:
+	incbin	"resources/palettes/line/new/Cast - Has Bean's Shadow.pal"
 
 ; --------------------------------------------------------------
 ; Animation Frames - Has Bean
@@ -7498,7 +7767,7 @@ sub_61C0:
 	move.b	(opponent).l,d0
 	move.b	OpponentPalettes(pc,d0.w),d0
 	lsl.w	#5,d0
-	lea	(Palettes).l,a2
+	lea	(Palette_Table).l,a2
 	adda.l	d0,a2
 	move.b	#3,d0
 	jmp	(LoadPalette).l
@@ -7513,7 +7782,7 @@ sub_61E0:
 	move.b	(opponent).l,d0
 	move.b	OpponentPalettes(pc,d0.w),d0
 	lsl.w	#5,d0
-	lea	(Palettes).l,a2
+	lea	(Palette_Table).l,a2
 	adda.l	d0,a2
 	move.w	$A(a1),d0
 	rol.w	#3,d0
@@ -7523,22 +7792,22 @@ sub_61E0:
 
 ; ---------------------------------------------------------------------------
 OpponentPalettes:
-	dc.b (Pal_Scratch-Palettes)>>5
-	dc.b (Pal_Frankly-Palettes)>>5
-	dc.b (Pal_Dynamight-Palettes)>>5
-	dc.b (Pal_Arms-Palettes)>>5
-	dc.b (Pal_Scratch-Palettes)>>5
-	dc.b (Pal_Grounder-Palettes)>>5
-	dc.b (Pal_DavySprocket-Palettes)>>5
-	dc.b (Pal_Coconuts-Palettes)>>5
-	dc.b (Pal_Spike-Palettes)>>5
-	dc.b (Pal_SirFfuzzyLogik-Palettes)>>5
-	dc.b (Pal_DragonBreath-Palettes)>>5
-	dc.b (Pal_Scratch-Palettes)>>5
-	dc.b (Pal_Robotnik-Palettes)>>5
-	dc.b (Pal_Scratch-Palettes)>>5
-	dc.b (Pal_Humpty-Palettes)>>5
-	dc.b (Pal_Skweel-Palettes)>>5
+	dc.b (Pal_Scratch-Palette_Table)>>5
+	dc.b (Pal_Frankly-Palette_Table)>>5
+	dc.b (Pal_Dynamight-Palette_Table)>>5
+	dc.b (Pal_Arms-Palette_Table)>>5
+	dc.b (Pal_Scratch-Palette_Table)>>5
+	dc.b (Pal_Grounder-Palette_Table)>>5
+	dc.b (Pal_DavySprocket-Palette_Table)>>5
+	dc.b (Pal_Coconuts-Palette_Table)>>5
+	dc.b (Pal_Spike-Palette_Table)>>5
+	dc.b (Pal_SirFfuzzyLogik-Palette_Table)>>5
+	dc.b (Pal_DragonBreath-Palette_Table)>>5
+	dc.b (Pal_Scratch-Palette_Table)>>5
+	dc.b (Pal_Robotnik-Palette_Table)>>5
+	dc.b (Pal_Scratch-Palette_Table)>>5
+	dc.b (Pal_Humpty-Palette_Table)>>5
+	dc.b (Pal_Skweel-Palette_Table)>>5
 OpponentArt:
 	dc.l ArtNem_Scratch
 	dc.l ArtNem_Frankly
@@ -9199,8 +9468,8 @@ sub_72E0:
 	DISABLE_INTS
 	jsr	(NemDec).l
 	ENABLE_INTS
-	lea	(Palettes).l,a2
-	adda.l	#(Pal_VsOhNo-Palettes),a2
+	lea	(Palette_Table).l,a2
+	adda.l	#(Pal_VsOhNo-Palette_Table),a2
 	move.b	#3,d0
 	jsr	(LoadPalette).l
 	movem.l	(sp)+,a0
@@ -16107,38 +16376,38 @@ loc_B0F4:
 loc_B102:
 	move.b	#1,d0
 	move.b	#0,d1
-	lea	(Palettes).l,a2
-	adda.l	#(Pal_IntroSky1_Puyo-Palettes),a2
+	lea	(Palette_Table).l,a2
+	adda.l	#(Pal_IntroSky1_Puyo-Palette_Table),a2
 	jsr	(FadeToPalette).l
 	clr.l	d0
 	move.b	(opponent).l,d0
 	move.b	OpponentIntroPals(pc,d0.w),d0
 	lsl.w	#5,d0
-	lea	(Palettes).l,a2
+	lea	(Palette_Table).l,a2
 	adda.l	d0,a2
 	move.b	#3,d0
 	move.b	#0,d1
 	jmp	(FadeToPalette).l
 ; ---------------------------------------------------------------------------
 OpponentIntroPals:
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_FranklyIntro-Palettes)>>5
-	dc.b (Pal_DynamightIntro-Palettes)>>5
-	dc.b (Pal_ArmsIntro-Palettes)>>5
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_GrounderIntro-Palettes)>>5
-	dc.b (Pal_DavySprocketIntro-Palettes)>>5
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_SpikeIntro-Palettes)>>5
-	dc.b (Pal_SirFfuzzyLogikIntro-Palettes)>>5
-	dc.b (Pal_DragonBreathIntro-Palettes)>>5
-	dc.b (Pal_ScratchIntro-Palettes)>>5
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_HumptyIntro-Palettes)>>5
-	dc.b (Pal_SkweelIntro-Palettes)>>5
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_Black-Palettes)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_FranklyIntro-Palette_Table)>>5
+	dc.b (Pal_DynamightIntro-Palette_Table)>>5
+	dc.b (Pal_ArmsIntro-Palette_Table)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_GrounderIntro-Palette_Table)>>5
+	dc.b (Pal_DavySprocketIntro-Palette_Table)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_SpikeIntro-Palette_Table)>>5
+	dc.b (Pal_SirFfuzzyLogikIntro-Palette_Table)>>5
+	dc.b (Pal_DragonBreathIntro-Palette_Table)>>5
+	dc.b (Pal_ScratchIntro-Palette_Table)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_HumptyIntro-Palette_Table)>>5
+	dc.b (Pal_SkweelIntro-Palette_Table)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_Black-Palette_Table)>>5
 ; ---------------------------------------------------------------------------
 
 loc_B152:
@@ -16598,10 +16867,10 @@ ActSegaLogo_Outline:
 
 ; ---------------------------------------------------------------------------
 
-	incbin	"resources/palettes/array/sega logo/logo 1.pal"
+	incbin	"resources/palettes/cycle/sega logo/logo 1.pal"
 	
 PalCycle_SegaLogo:
-	incbin	"resources/palettes/array/sega logo/logo 2.pal"
+	incbin	"resources/palettes/cycle/sega logo/logo 2.pal"
 	even
 	
 Anim_SegaLogo:
@@ -17020,8 +17289,8 @@ loc_BA3C:
 	move.b	#2,d0
 	move.b	#0,d1
 	move.b	#2,d2
-	lea	(Palettes).l,a2
-	adda.l	#(Pal_MainMenuShadow-Palettes),a2
+	lea	(Palette_Table).l,a2
+	adda.l	#(Pal_MainMenuShadow-Palette_Table),a2
 	jsr	(FadeToPal_StepCount).l
 	lea	(sub_BADA).l,a1
 	jsr	(FindActorSlot).l
@@ -19794,11 +20063,11 @@ loc_D450:
 ; ---------------------------------------------------------------------------
 
 word_D456:	
-	incbin	"resources/palettes/array/password/highlighter.pal"	
+	incbin	"resources/palettes/cycle/password/highlighter.pal"	
 	even
 
 word_D4B0:
-	incbin	"resources/palettes/array/password/cursor.pal"	
+	incbin	"resources/palettes/cycle/password/cursor.pal"	
 	even
 	
 ; =============== S U B	R O U T	I N E =======================================
@@ -20160,7 +20429,7 @@ sub_D818:
 	move.w	d0,d1
 	andi.w	#$FF,d1
 	lsl.w	#5,d1
-	lea	(Palettes).l,a2
+	lea	(Palette_Table).l,a2
 	adda.l	d1,a2
 	lsr.w	#8,d0
 	clr.w	d1
@@ -20172,7 +20441,7 @@ loc_D85A:
 word_D860:	dc.b -1, -1
 	dc.b -1, -1
 	dc.b -1, -1
-	dc.b 2, (Pal_Humpty-Palettes)>>5
+	dc.b 2, (Pal_Humpty-Palette_Table)>>5
 	dc.b -1, -1
 	dc.b -1, -1
 	dc.b -1, -1
@@ -20183,8 +20452,8 @@ word_D860:	dc.b -1, -1
 	dc.b -1, -1
 	dc.b -1, -1
 	dc.b -1, -1
-	dc.b 0, (Pal_Spike-Palettes)>>5
-	dc.b 3, (Pal_Spike-Palettes)>>5
+	dc.b 0, (Pal_Spike-Palette_Table)>>5
+	dc.b 3, (Pal_Spike-Palette_Table)>>5
 ; ---------------------------------------------------------------------------
 
 loc_D880:
@@ -20224,7 +20493,7 @@ loc_D8C8:
 	lea	(OpponentPalettes).l,a1
 	move.b	(a1,d2.w),d1
 	lsl.w	#5,d1
-	lea	(Palettes).l,a2
+	lea	(Palette_Table).l,a2
 	adda.l	d1,a2
 	move.b	byte_D906(pc,d6.w),d0
 	clr.w	d1
@@ -21104,7 +21373,7 @@ ActTitleHandler:
 	moveq	#3,d3
 
 .LineFade:
-	lea	(Palettes).l,a2
+	lea	(Palette_Table).l,a2
 	move.w	d3,d0
 	moveq	#0,d1
 	jsr	(FadeToPalette).l
@@ -21126,10 +21395,10 @@ ActTitleHandler:
 	moveq	#3,d3
 
 .FadeToPal:
-	lea	(Palettes).l,a2
+	lea	(Palette_Table).l,a2
 	move.l	d3,d0
 	move.l	d0,d2
-	addi.w	#(Pal_Title1-Palettes)>>5,d2
+	addi.w	#(Pal_Title1-Palette_Table)>>5,d2
 	lsl.w	#5,d2
 	adda.l	d2,a2
 	moveq	#0,d1
@@ -25759,7 +26028,7 @@ loc_105F6:
 	move.b	(opponent).l,d0
 	move.b	OpponentIntroPals2(pc,d0.w),d0
 	lsl.w	#5,d0
-	lea	(Palettes).l,a2
+	lea	(Palette_Table).l,a2
 	adda.l	d0,a2
 	move.b	#3,d0
 	jmp	(LoadPalette).l
@@ -25767,24 +26036,24 @@ loc_105F6:
 
 ; ---------------------------------------------------------------------------
 OpponentIntroPals2:
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_FranklyIntro-Palettes)>>5
-	dc.b (Pal_DynamightIntro-Palettes)>>5
-	dc.b (Pal_ArmsIntro-Palettes)>>5
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_GrounderIntro-Palettes)>>5
-	dc.b (Pal_DavySprocketIntro-Palettes)>>5
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_SpikeIntro-Palettes)>>5
-	dc.b (Pal_SirFfuzzyLogikIntro-Palettes)>>5
-	dc.b (Pal_DragonBreathIntro-Palettes)>>5
-	dc.b (Pal_ScratchIntro-Palettes)>>5
-	dc.b (Pal_Black-Palettes)>>5
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_HumptyIntro-Palettes)>>5
-	dc.b (Pal_SkweelIntro-Palettes)>>5
-	dc.b (Pal_CoconutsIntro-Palettes)>>5
-	dc.b (Pal_RedYellowPuyos-Palettes)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_FranklyIntro-Palette_Table)>>5
+	dc.b (Pal_DynamightIntro-Palette_Table)>>5
+	dc.b (Pal_ArmsIntro-Palette_Table)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_GrounderIntro-Palette_Table)>>5
+	dc.b (Pal_DavySprocketIntro-Palette_Table)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_SpikeIntro-Palette_Table)>>5
+	dc.b (Pal_SirFfuzzyLogikIntro-Palette_Table)>>5
+	dc.b (Pal_DragonBreathIntro-Palette_Table)>>5
+	dc.b (Pal_ScratchIntro-Palette_Table)>>5
+	dc.b (Pal_Black-Palette_Table)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_HumptyIntro-Palette_Table)>>5
+	dc.b (Pal_SkweelIntro-Palette_Table)>>5
+	dc.b (Pal_CoconutsIntro-Palette_Table)>>5
+	dc.b (Pal_RedYellowPuyos-Palette_Table)>>5
 unk_10628:	dc.b   0
 	dc.b $30
 	dc.b   0
@@ -26183,8 +26452,8 @@ loc_109AC:
 	ENABLE_INTS
 	movem.l	(sp)+,d2/a0
 	bsr.w	loc_105F6
-	lea	(Palettes).l,a2
-	adda.l	#(Pal_HasBeanShadow-Palettes),a2
+	lea	(Palette_Table).l,a2
+	adda.l	#(Pal_HasBeanShadow-Palette_Table),a2
 	move.b	#2,d0
 	jsr	(LoadPalette).l
 	lea	(loc_10A14).l,a1
@@ -26333,8 +26602,8 @@ unk_10B68:	dc.b   3
 ; ---------------------------------------------------------------------------
 	move.b	#0,d0
 	move.b	#0,d1
-	lea	(Palettes).l,a2
-	adda.l	#(Pal_RedYellowPuyos-Palettes),a2
+	lea	(Palette_Table).l,a2
+	adda.l	#(Pal_RedYellowPuyos-Palette_Table),a2
 	cmpi.b	#$11,(level).l
 	beq.w	loc_10BB8
 	adda.l	#(Pal_Characters_Puyo-Pal_RedYellowPuyos),a2
@@ -26343,8 +26612,8 @@ loc_10BB8:
 	jsr	(FadeToPalette).l
 	move.b	#2,d0
 	move.b	#0,d1
-	lea	(Palettes).l,a2
-	adda.l	#(Pal_Characters_Puyo-Palettes),a2
+	lea	(Palette_Table).l,a2
+	adda.l	#(Pal_Characters_Puyo-Palette_Table),a2
 	jsr	(FadeToPalette).l
 
 locret_10BD8:
@@ -30148,7 +30417,7 @@ sub_123AE:
 	lea	(OpponentPalettes).l,a1
 	move.b	(a1,d0.w),d0
 	lsl.w	#5,d0
-	lea	(Palettes).l,a2
+	lea	(Palette_Table).l,a2
 	adda.l	d0,a2
 	move.b	#3,d0
 	move.b	#0,d1
@@ -30173,8 +30442,8 @@ loc_12404:
 	move.b	#3,d0
 	move.b	#1,d1
 	move.b	#3,d2
-	lea	(Palettes).l,a2
-	adda.l	#(Pal_White-Palettes),a2
+	lea	(Palette_Table).l,a2
+	adda.l	#(Pal_White-Palette_Table),a2
 	jsr	(FadeToPal_StepCount).l
 	move.w	#$26,$2A(a0)
 
