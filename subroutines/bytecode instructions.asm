@@ -321,7 +321,7 @@ Bytecode_FadePal:
 	move.b	d0,d1
 	lsr.w	#3,d0
 	andi.l	#$1FFF,d0
-	lea	Palettes,a2
+	lea	Palette_Table,a2
 	adda.l	d0,a2
 
 	move.b	d1,d0
@@ -355,7 +355,7 @@ Bytecode_FadePal_Intro:
 	lsr.w	#3,d0
 	andi.l	#$1FFF,d0
 	move.w	d0,d3
-	lea	Palettes,a2
+	lea	Palette_Table,a2
 	adda.l	d0,a2
 
 	move.b	d1,d0
@@ -378,7 +378,7 @@ Bytecode_FadePal_Intro:
 	move.b	(a0)+,d2
 	move.l	a0,bytecode_addr
 
-	lea	Palettes,a2
+	lea	Palette_Table,a2
 	asl.w	#5,d2
 	adda.w	d2,a2
 
@@ -395,7 +395,7 @@ Bytecode_LoadPal:
 	move.b	d0,d1
 	lsr.w	#3,d0
 	andi.l	#$1FFF,d0
-	lea	Palettes,a2
+	lea	Palette_Table,a2
 	adda.l	d0,a2
 	move.b	d1,d0
 
