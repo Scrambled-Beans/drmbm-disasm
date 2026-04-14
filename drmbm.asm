@@ -32,7 +32,7 @@
 ;
 ; --------------------------------------------------------------
 ;
-;	Last Updated: 4/13/2026 (M/D/Y)
+;	Last Updated: 04/14/2026 20:51:14 (M/D/Y)
 ;
 ; ==============================================================
 
@@ -14343,7 +14343,7 @@ unk_9E7C:	dc.b $10
 	dc.b   0
 	dc.b   4
 ArtNem_GroupedStars:
-	incbin	"resources/art/art_nem/compressed/VS - Grouped Stars.nem"
+	incbin	"resources/art/art_nem/compressed/2P - Grouped Stars.nem"
 	even
 off_A15E:	dc.l loc_A748
 	dc.l loc_A58A
@@ -46330,7 +46330,7 @@ ArtNem_GrounderIntro:
 	even
 	
 ArtNem_AllRightOhNo:
-	incbin	"resources/art/art_nem/compressed/VS - Results.nem"
+	incbin	"resources/art/art_nem/compressed/2P - Results.nem"
 	even
 	
 ArtNem_SkweelIntro:
@@ -46725,7 +46725,7 @@ ArtPuyo_LevelBG:
 	even
 					
 ArtPuyo_VSWinLose:
-	incbin	"resources/art/art_sor/compressed/VS - Results.sor"
+	incbin	"resources/art/art_sor/compressed/2P - Results.sor"
 	even
 					
 ArtPuyo_LevelIntro:
@@ -46757,7 +46757,7 @@ ArtPuyo_Harpy:
 	even
 					
 ArtPuyo_LevelSprites:
-	incbin	"resources/art/art_sor/compressed/Puyo, Carbuncle, and Stage.sor"
+	incbin	"resources/art/art_sor/compressed/Stage - Puyo and Carbuncle.sor"
 	even
 					
 ArtPuyo_BestRecord:
@@ -46799,11 +46799,11 @@ ArtNem_SegaLogo:
 	even
 	
 ArtNem_DifficultyFaces:
-	incbin	"resources/art/art_nem/compressed/VS - Difficulty Faces 1P.nem"
+	incbin	"resources/art/art_nem/compressed/2P - Difficulty Faces 1P.nem"
 	even
 	
 ArtNem_DifficultyFaces2:
-	incbin	"resources/art/art_nem/compressed/VS - Difficulty Faces 2P.nem"
+	incbin	"resources/art/art_nem/compressed/2P - Difficulty Faces 2P.nem"
 	even
 	
 ArtUnc_Robotnik_21:
