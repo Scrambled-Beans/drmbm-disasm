@@ -177,7 +177,7 @@ BPCMD macros list
 
 BPAL macros pal, line
 
-	dc.w	$D, ((((\pal)-Palettes)&$1FFF)<<3)|((\line)&3)
+	dc.w	$D, ((((\pal)-Palette_Table)&$1FFF)<<3)|((\line)&3)
 
 ; --------------------------------------------------------------
 ; Fade to palette bytecode instruction
@@ -190,7 +190,7 @@ BPAL macros pal, line
 
 BFADE macros pal, line, speed
 
-	dc.w	$E, ((((\pal)-Palettes)&$1FFF)<<3)|((\line)&3), (\speed)<<8
+	dc.w	$E, ((((\pal)-Palette_Table)&$1FFF)<<3)|((\line)&3), (\speed)<<8
 
 ; --------------------------------------------------------------
 ; Play sound bytecode instruction
@@ -268,8 +268,8 @@ BNEM macro vram, art
 
 BFADEI macros pal, pal2, line, speed
 
-	dc.w	$15, ((((\pal)-Palettes)&$1FFF)<<3)|((\line)&3), &
-		((\speed)<<8)|((((\pal2)-Palettes)>>5)&$FF)
+	dc.w	$15, ((((\pal)-Palette_Table)&$1FFF)<<3)|((\line)&3), &
+		((\speed)<<8)|((((\pal2)-Palette_Table)>>5)&$FF)
 
 ; --------------------------------------------------------------
 ; Puyo decompression (checks intro scenes) bytecode instruction
