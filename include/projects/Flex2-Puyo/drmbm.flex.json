@@ -1,0 +1,633 @@
+{
+    "Flex": 2,
+    "name": "",
+    "node": "0931ccf3-bfd1-4a88-81df-5a359337de8c",
+    "objects": [
+        {
+            "name": "Pause",
+            "children": [
+                {
+                    "format": "Puyo.js",
+                    "name": "1P - Pause",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "0",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Font - Battle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Stage.asm",
+                        "label": "Sprite_Stage",
+                        "tile_offset": "0x500",
+                        "only_display_sprite": "32"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "0931ccf3-bfd1-4a88-81df-5a359337de8c"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "2P - Pause",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "1",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Font - Battle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Stage.asm",
+                        "label": "Sprite_Stage",
+                        "tile_offset": "0x500",
+                        "only_display_sprite": "33"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "de0931cc-f3bf-412a-8881-df5a359337de"
+                }
+            ],
+            "isDirectory": true,
+            "expanded": false
+        },
+        {
+            "name": "Bean - Blue",
+            "children": [
+                {
+                    "format": "Puyo.js",
+                    "name": "Normal",
+                    "palettes": [
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "1",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Blue.asm",
+                        "label": "Sprite_Puyo_Blue",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "0"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "40a2b17e-db8a-4cf6-9e09-31ccf3bfd12a"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Squish",
+                    "palettes": [
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "1",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Blue.asm",
+                        "label": "Sprite_Puyo_Blue",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "2"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "a2b17edb-8a9c-46de-8931-ccf3bfd12a88"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Stretch",
+                    "palettes": [
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "1",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Blue.asm",
+                        "label": "Sprite_Puyo_Blue",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "3"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "b17edb8a-9cf6-4e09-b1cc-f3bfd12a8881"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Shock",
+                    "palettes": [
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "1",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Blue.asm",
+                        "label": "Sprite_Puyo_Blue",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "8"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "7edb8a9c-f6de-4931-8cf3-bfd12a8881df"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Pop (Small)",
+                    "palettes": [
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "1",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Blue.asm",
+                        "label": "Sprite_Puyo_Blue",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "6"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "db8a9cf6-de09-41cc-b3bf-d12a8881df5a"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Pop (Medium)",
+                    "palettes": [
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "1",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Blue.asm",
+                        "label": "Sprite_Puyo_Blue",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "5"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "8a9cf6de-0931-4cf3-bfd1-2a8881df5a35"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Pop (Large)",
+                    "palettes": [
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "1",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Blue.asm",
+                        "label": "Sprite_Puyo_Blue",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "6"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "9cf6de09-31cc-43bf-912a-8881df5a3593"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Highlight",
+                    "palettes": [
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "1",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Blue.asm",
+                        "label": "Sprite_Puyo_Blue",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "1"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "f6de0931-ccf3-4fd1-aa88-81df5a359337"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Shadow",
+                    "palettes": [
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Blue and Purple.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": "1",
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Blue.asm",
+                        "label": "Sprite_Puyo_Blue",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "7"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "ac987360-113b-4544-b6de-be6bb249221d"
+                }
+            ],
+            "isDirectory": true,
+            "expanded": false
+        },
+        {
+            "name": "Bean - Red",
+            "children": [
+                {
+                    "format": "Puyo.js",
+                    "name": "Normal",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": 0,
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Red.asm",
+                        "label": "Sprite_Puyo_Red",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "0"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "a640a2b1-7edb-4a9c-b6de-0931ccf3bfd1"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Squish",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": 0,
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Red.asm",
+                        "label": "Sprite_Puyo_Red",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "2"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "7360113b-5544-46de-be6b-b249221dd1f6"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Stretch",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": 0,
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Red.asm",
+                        "label": "Sprite_Puyo_Red",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "3"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "60113b55-4476-4ebe-abb2-49221dd1f6ce"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Shock",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": 0,
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Red.asm",
+                        "label": "Sprite_Puyo_Red",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "8"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "28ac9873-6011-4b55-8476-debe6bb24922"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Pop (Small)",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": 0,
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Red.asm",
+                        "label": "Sprite_Puyo_Red",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "6"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "554476de-be6b-4249-a21d-d1f6ce773f76"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Pop (Medium)",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": 0,
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Red.asm",
+                        "label": "Sprite_Puyo_Red",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "5"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "3b554476-debe-4bb2-8922-1dd1f6ce773f"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Pop (Large)",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": 0,
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Red.asm",
+                        "label": "Sprite_Puyo_Red",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "4"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "113b5544-76de-4e6b-b249-221dd1f6ce77"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Highlight",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": 0,
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Red.asm",
+                        "label": "Sprite_Puyo_Red",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "1"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "98736011-3b55-4476-9ebe-6bb249221dd1"
+                },
+                {
+                    "format": "Puyo.js",
+                    "name": "Shadow",
+                    "palettes": [
+                        {
+                            "path": "..\\..\\..\\resources\\palettes\\line\\new\\Stage - Red and Yellow.pal",
+                            "length": 1
+                        }
+                    ],
+                    "default_palette": 0,
+                    "art": {
+                        "path": "..\\..\\..\\resources\\art\\art_sor\\uncompressed\\Stage - Puyo and Carbuncle.unc",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "..\\..\\..\\resources\\mappings\\sprite\\Puyo Red.asm",
+                        "label": "Sprite_Puyo_Red",
+                        "tile_offset": "0x100",
+                        "only_display_sprite": "7"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "4476debe-6bb2-4922-9dd1-f6ce773f76bb"
+                }
+            ],
+            "isDirectory": true,
+            "expanded": false,
+            "uuid": "0d7fa4fa-ef5a-44f0-affc-f68a0bb10dad"
+        }
+    ]
+}
