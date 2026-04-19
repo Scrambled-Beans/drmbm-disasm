@@ -32,7 +32,7 @@
 ;
 ; --------------------------------------------------------------
 ;
-;	Last Updated: 04/14/2026 23:02:10 (M/D/Y)
+;	Last Updated: 04/19/2026 17:32:28 (M/D/Y)
 ;
 ; ==============================================================
 
@@ -364,7 +364,7 @@ FixHighScores:
 ; --------------------------------------------------------------
 
 LoadDefaultOptions:
-	include	"subroutines/default options.asm"
+	include	"modules/default options.asm"
 
 ; --------------------------------------------------------------
 ; Wait for DMA to be over
@@ -1058,7 +1058,7 @@ QueuePlaneCmd:
 ;	a0.l	- Pointer to compressed art
 ; --------------------------------------------------------------
 
-	include "subroutines/decompressions/sorcery decompression.asm"
+	include "modules/decompressions/sorcery decompression.asm"
 
 ; --------------------------------------------------------------
 ; Initialize the VDP
@@ -1907,7 +1907,7 @@ RunBytecode:
 ; Bytecode instructions
 ; --------------------------------------------------------------
 	
-	include "subroutines/bytecode instructions.asm"
+	include "modules/bytecode instructions.asm"
 
 ; --------------------------------------------------------------
 ; Game Bytecode
@@ -33262,7 +33262,7 @@ SpriteMappings:
 	dc.l Sprite_Puyo_Green
 	dc.l Sprite_Puyo_Purple
 	dc.l Sprite_Puyo_Blue
-	dc.l off_155B4
+	dc.l Sprite_Stage
 	dc.l off_14814
 	dc.l off_19084
 	dc.l off_17748
@@ -34316,155 +34316,14 @@ word_14F8A:	dc.w 2
 	
 ; Sprite - Puyo Blue
 	include	"resources/mappings/sprite/Puyo Blue.asm"	
+
+; --------------------------------------------------------------
+
+; Sprite - Stage
+	include	"resources/mappings/sprite/Stage.asm"	
 	
 ; --------------------------------------------------------------
 
-off_155B4:	dc.l word_15866
-	dc.l word_15878
-	dc.l word_1588A
-	dc.l word_1589C
-	dc.l word_156A0
-	dc.l 0
-	dc.l word_158AE
-	dc.l word_158B8
-	dc.l word_158C2
-	dc.l word_158CC
-	dc.l word_158FE
-	dc.l 0
-	dc.l word_158D6
-	dc.l word_158E0
-	dc.l word_158EA
-	dc.l word_158F4
-	dc.l word_156EA
-	dc.l word_156F4
-	dc.l word_15716
-	dc.l word_15738
-	dc.l word_1575A
-	dc.l word_1576C
-	dc.l word_1577E
-	dc.l word_15798
-	dc.l word_157BA
-	dc.l 0
-	dc.l word_157E4
-	dc.l word_157EE
-	dc.l word_15800
-	dc.l word_1581A
-	dc.l word_1583C
-	dc.l 0
-	dc.l word_1563C
-	dc.l word_1566E
-word_1563C:	dc.w 6
-	dc.w $FFFC, $100, $8534, $FFE8
-	dc.w $FFFC, $100, $8516, $FFF0
-	dc.w $FFFC, $100, $853E, $FFF8
-	dc.w $FFFC, $100, $853A, 0
-	dc.w $FFFC, $100, $851E, 8
-	dc.w $FFFC, $100, $851C, $10
-word_1566E:	dc.w 6
-	dc.w $FFFC, $100, $A534, $FFE8
-	dc.w $FFFC, $100, $A516, $FFF0
-	dc.w $FFFC, $100, $A53E, $FFF8
-	dc.w $FFFC, $100, $A53A, 0
-	dc.w $FFFC, $100, $A51E, 8
-	dc.w $FFFC, $100, $A51C, $10
-word_156A0:	dc.w 9
-	dc.w $FFFC, 0, $8201, $24
-	dc.w 0,	$F01, $8220, 0
-	dc.w 0,	$F01, $8230, $20
-	dc.w 0,	$F01, $8240, $40
-	dc.w 0,	$B01, $8250, $60
-	dc.w $20, $E01,	$8260, 0
-	dc.w $20, $E01,	$826C, $20
-	dc.w $20, $E01,	$8278, $40
-	dc.w $20, $A01,	$8284, $60
-word_156EA:	dc.w 1
-	dc.w 0,	$D00, $E488, 0
-word_156F4:	dc.w 4
-	dc.w $FFF4, 0, $4314, $FFF8
-	dc.w $FFF4, 0, $4B14, 0
-	dc.w $FFFC, 3, $4315, $FFF0
-	dc.w $FFFC, 3, $4B15, 8
-word_15716:	dc.w 4
-	dc.w $FFF4, 0, $4314, $FFF8
-	dc.w $FFF4, 0, $4B14, 0
-	dc.w $FFFE, 3, $4316, $FFF0
-	dc.w $FFFE, 3, $4B16, 8
-word_15738:	dc.w 4
-	dc.w $FFF4, 0, $4314, $FFF8
-	dc.w $FFF4, 0, $4B14, 0
-	dc.w 0,	3, $4317, $FFF0
-	dc.w 0,	3, $4B17, 8
-word_1575A:	dc.w 2
-	dc.w $FFF8, $502, $42F8, $FFF8
-	dc.w $FFFE, $503, $6310, $FFFE
-word_1576C:	dc.w 2
-	dc.w $FFF8, $502, $42F8, $FFF8
-	dc.w $FFE8, $502, $42F8, $FFF8
-word_1577E:	dc.w 3
-	dc.w $FFF8, $502, $42F8, $FFF8
-	dc.w $FFE8, $502, $42F8, $FFF8
-	dc.w $FFD8, $502, $42F8, $FFF8
-word_15798:	dc.w 4
-	dc.w $FFF8, $502, $42F8, $FFF8
-	dc.w $FFE8, $502, $42F8, $FFF8
-	dc.w $FFD8, $502, $42F8, $FFF8
-	dc.w $FFC8, $502, $42F8, $FFF8
-word_157BA:	dc.w 5
-	dc.w $FFF8, $502, $42F8, $FFF8
-	dc.w $FFE8, $502, $42F8, $FFF8
-	dc.w $FFD8, $502, $42F8, $FFF8
-	dc.w $FFC8, $502, $42F8, $FFF8
-	dc.w $FFB8, $502, $42F8, $FFF8
-word_157E4:	dc.w 2
-	dc.w $FFFE, $503, $6310, $FFFE
-word_157EE:	dc.w 2
-	dc.w $FFFE, $503, $6310, $FFFE
-	dc.w $FFEE, $503, $6310, $FFFE
-word_15800:	dc.w 3
-	dc.w $FFFE, $503, $6310, $FFFE
-	dc.w $FFEE, $503, $6310, $FFFE
-	dc.w $FFDE, $503, $6310, $FFFE
-word_1581A:	dc.w 4
-	dc.w $FFFE, $503, $6310, $FFFE
-	dc.w $FFEE, $503, $6310, $FFFE
-	dc.w $FFDE, $503, $6310, $FFFE
-	dc.w $FFCE, $503, $6310, $FFFE
-word_1583C:	dc.w 5
-	dc.w $FFFE, $503, $6310, $FFFE
-	dc.w $FFEE, $503, $6310, $FFFE
-	dc.w $FFDE, $503, $6310, $FFFE
-	dc.w $FFCE, $503, $6310, $FFFE
-	dc.w $FFBE, $503, $6310, $FFFE
-word_15866:	dc.w 2
-	dc.w $FFF8, $502, $42F8, $FFF8
-	dc.w $FFFE, $503, $6310, $FFFE
-word_15878:	dc.w 2
-	dc.w $FFF8, $502, $42FC, $FFF8
-	dc.w $FFFE, $503, $6310, $FFFE
-word_1588A:	dc.w 2
-	dc.w $FFF8, $502, $4300, $FFF8
-	dc.w $FFFE, $503, $6310, $FFFE
-word_1589C:	dc.w 2
-	dc.w $FFF8, $502, $4304, $FFF8
-	dc.w $FFFE, $503, $6310, $FFFE
-word_158AE:	dc.w 1
-	dc.w $FFFE, $503, $6310, $FFFE
-word_158B8:	dc.w 1
-	dc.w $FFFE, $503, $6310, $FFFE
-word_158C2:	dc.w 1
-	dc.w $FFFE, $503, $6310, $FFFE
-word_158CC:	dc.w 1
-	dc.w $FFFE, $503, $6310, $FFFE
-word_158D6:	dc.w 1
-	dc.w $FFF8, $500, $E0F8, $FFF8
-word_158E0:	dc.w 1
-	dc.w $FFF8, $500, $E0FC, $FFF8
-word_158EA:	dc.w 1
-	dc.w $FFFC, 0, $832A, $FFFC
-word_158F4:	dc.w 1
-	dc.w $FFFC, 3, $832A, $FFFC
-word_158FE:	dc.w 1
-	dc.w $FFFC, 3, $32A, $FFFC
 off_15908:	dc.l word_15A2A
 	dc.l word_15A34
 	dc.l word_15A3E
@@ -45750,12 +45609,12 @@ byte_2378C:	dc.b 2
 ; =============== S U B	R O U T	I N E =======================================
 
 	; Nemesis Decompression	
-	include "subroutines/decompressions/nemesis decompression.asm"
+	include "modules/decompressions/nemesis decompression.asm"
 
 ; =============== S U B	R O U T	I N E =======================================
 
 	; Enigma Decompression	
-	include "subroutines/decompressions/enigma decompression.asm"
+	include "modules/decompressions/enigma decompression.asm"
 
 ; =============== S U B	R O U T	I N E =======================================
 
