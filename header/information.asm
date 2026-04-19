@@ -55,7 +55,7 @@ SRAMSupport:	if EnableSRAM=1
 								  
 ModemSupport:	DC.b "            "			; Modem support
 
-Notes:			DC.b "                                        " ; Notes (unused, anything can be put in this space, but it has to be 40 bytes.)
+Notes:			DC.b "                                        " ; Notes (unused, anything can be put in this space, but it has to be 40 letters)
 
 				if RegionCode=0			; Japan
 Region: 		DC.b "J               "  	; Region (Country Code)
