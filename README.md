@@ -21,9 +21,9 @@ Do check the "researchers.txt" first to see what people are reseaching.<br/>
 ## Disclaimer
 
 - Any and all content presented in this repository is presented for informational and educational purposes only.<br/>
-- Commercial usage is expressly prohibited. Scramble-Beans does not claim ownership of any code in this repository.<br/>
+- Commercial usage is expressly prohibited. Scramble-Beans or any of the contributors do not claim ownership of any code in this repository.<br/>
 - You assume any and all responsibility for using this content responsibility.<br/>
-- Scramble-Beans does not not claim any responsibility or warranty.<br/>
+- Scramble-Beans or any of the contributors do not claim any responsibility or warranty.<br/>
 
 ## Building (Windows)
 
