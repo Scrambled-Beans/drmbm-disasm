@@ -2,6 +2,12 @@
 
 This is a work-in-progress disassembly of Dr. Robotnik's Mean Bean Machine for the Sega Mega Drive/Genesis.<br/> 
 
+## Sprite Editing
+
+Use Flex2-Puyo: https://github.com/Nasina7/Flex2-Puyo/releases<br/>
+<br/>
+A work-in-progress project to edit the sprites can be found in the following folder: include > projects > Flex2-Puyo 
+
 ## Issues/Improvements
 
 Suggestions, pull requests, and the like are welcome!<br/>
