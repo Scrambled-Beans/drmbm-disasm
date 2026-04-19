@@ -2,6 +2,13 @@
 
 This is a work-in-progress disassembly of Dr. Robotnik's Mean Bean Machine for the Sega Mega Drive/Genesis.<br/> 
 
+## Building (Windows)
+
+1 - Download the repo.<br/>
+2 - Open "build config.asm" and adjust any settings (the default settings build a 100% USA Version).<br/>
+3 - Run "build (Windows).bat to build the rom.<br/>
+4 - The built rom can be found in the "output" folder.<br/>
+
 ## Sprite Editing
 
 Use Flex2-Puyo: https://github.com/Nasina7/Flex2-Puyo/releases<br/>
@@ -31,12 +38,3 @@ Do check the "researchers.txt" first to see what people are reseaching.<br/>
 - Scramble Beans or any of the contributors do not claim ownership of any code in this repository.<br/>
 - You assume any and all responsibility for using this content responsibility.<br/>
 - Scramble Beans or any of the contributors do not claim any responsibility or warranty.<br/>
-
-## Building (Windows)
-
-1 - Download the repo.<br/>
-2 - Open "build config.asm" and adjust any settings (the default settings build a 100% USA Version).<br/>
-3 - Run "build (Windows).bat to build the rom.<br/>
-4 - The built rom can be found in the "output" folder.<br/>
-
-
