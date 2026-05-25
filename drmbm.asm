@@ -9854,7 +9854,7 @@ sub_7752:
 	move.w	d0,$A(a0)
 	addi.w	#-$30,d1
 	move.w	d1,$E(a0)
-	move.l	#(loc_FFFE+2),$12(a0)
+	move.l	#$10000,$12(a0)
 	move.l	#$8000,$16(a0)
 	move.w	#6,$28(a0)
 
