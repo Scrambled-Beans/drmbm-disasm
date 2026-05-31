@@ -14,7 +14,7 @@
 ;	  - TomboyDragon
 ;     - Neto
 ;     - DaxKatter
-;     - ArcaniaCQ (Nia)
+;     - ArcaniaCQ
 ;     - Kiwami
 ;     - AdolescentSeagull
 ;     - Hivebrain
@@ -32,7 +32,7 @@
 ;
 ; --------------------------------------------------------------
 ;
-;	Last Updated: 04/19/2026 17:32:28 (M/D/Y)
+;	Last Updated: 05/31/2026 17:32:28 (M/D/Y)
 ;
 ; ==============================================================
 
@@ -9215,6 +9215,7 @@ unk_7016:	dc.b   0
 
 Passwords:
 	include "resources/misc/list of passwords.asm"
+Passwords_End
 
 ; =============== S U B	R O U T	I N E =======================================
 
@@ -19888,7 +19889,7 @@ loc_D282:
 	cmpi.w	#$FFFF,d0
 	beq.w	loc_D394
 	lea	(Passwords).l,a1
-	adda.w	#$60,a1
+	adda.w 	#(Passwords_End-Passwords),a1
 	moveq	#$2F,d1
 
 loc_D29A:
